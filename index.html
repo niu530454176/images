@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        .slider{
+            width: 520px;
+            height: 280px;
+            overflow: hidden;
+            margin: auto;
+            position: relative;
+        }
+
+        .slider ul{
+            width: 2000000px;
+        }
+
+        .slider ul li img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider ul li{
+            width: 520px;
+            height: 520px;
+            float: left;
+            animation: box 6s infinite backwards;
+        }
+
+        @keyframes box{
+            0%{
+                margin-left: 0;
+            }
+/*            50%{
+                margin-left: -1560px;
+            }
+
+            68%{
+                margin-left: 0;
+            }*/
+            100%{
+                margin-left: -1560px;
+            }
+        }
+
+        .slider .dots{
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
+
+        .slider .dots .dot{
+            width: 20px;
+            height: 20px;
+            background: #ffffff;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <ul class="cf">
+            <li><img src="https://img.alicdn.com/tfs/TB1VAigQpXXXXXjapXXXXXXXXXX-520-280.jpg_q90_.webp" alt=""></li>
+            <li style="animation-delay: 2s"><img src="https://img.alicdn.com/tfs/TB1LweEQpXXXXalXVXXXXXXXXXX-520-280.jpg_q90_.webp" alt=""></li>
+            <li style="animation-delay: 4s"><img src="https://img.alicdn.com/tfs/TB1VAigQpXXXXXjapXXXXXXXXXX-520-280.jpg_q90_.webp" alt=""></li>
+        </ul>
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</body>
+</html>
